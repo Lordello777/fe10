@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clínica Vida - Atendimento humanizado e tecnologia de ponta.">
+  <title>Clínica Vida | Preferências de Cookies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="conteudo">
+    <div class="icone">✚</div>
+    <h1>Clínica Vida</h1>
+    <p>Atendimento humanizado e tecnologia de ponta.</p>
+
+    <button class="botao-preferencias"
+      onclick="reabrirPreferencias()">
+      Reabrir preferências de cookies
+    </button>
+  </main>
+
+  <section class="painel-status" id="painel-status"
+    aria-live="polite">
+    <h2>Status do consentimento</h2>
+    <p>Essenciais: Sempre ativos</p>
+    <p>Análise: Aguardando escolha</p>
+    <p>Marketing: Aguardando escolha</p>
+  </section>
+
+  <div class="fundo-banner" id="fundo-banner"></div>
+
+  <section class="banner" id="banner"
+    role="dialog"
+    aria-labelledby="titulo-banner"
+    aria-describedby="descricao-banner">
+
+    <h2 id="titulo-banner">Valorizamos sua privacidade</h2>
+
+    <p id="descricao-banner">
+      Utilizamos cookies para melhorar sua experiência.
+      Escolha quais categorias deseja aceitar.
+    </p>
+
+    <div class="categoria">
+      <label>
+        <input type="checkbox" checked disabled>
+        <span>
+          <strong>Essenciais</strong>
+          <small>Sempre ativos — necessários para o funcionamento.</small>
+        </span>
+      </label>
+    </div>
+
+    <div class="categoria">
+      <label>
+        <input type="checkbox" id="chk-analise">
+        <span>
+          <strong>Análise</strong>
+          <small>Ajudam a entender como o site é utilizado.</small>
+        </span>
+      </label>
+    </div>
+
+    <div class="categoria">
+      <label>
+        <input type="checkbox" id="chk-marketing">
+        <span>
+          <strong>Marketing</strong>
+          <small>Permitem personalizar conteúdos e anúncios.</small>
+        </span>
+      </label>
+    </div>
+
+    <div class="banner-botoes">
+      <button class="aceitar" onclick="aceitarTodos()">
+        Aceitar todos
+      </button>
+
+      <button class="essenciais"
+        onclick="aceitarApenasEssenciais()">
+        Apenas essenciais
+      </button>
+
+      <button class="salvar" onclick="salvarSelecao()">
+        Salvar seleção
+      </button>
+    </div>
+
+    <p class="nota">
+      Você pode modificar suas preferências a qualquer momento.
+    </p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

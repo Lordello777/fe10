@@ -1,0 +1,6 @@
+function apagarTema() {
+  document.cookie = "tema=; max-age=0; path=/; SameSite=Lax";
+
+  document.getElementById("demo-tema-resultado").innerHTML =
+    "Cookie tema apagado";
+}
